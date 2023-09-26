@@ -1,9 +1,8 @@
 cedula = int(input("Digite la cedula: "))
 salario_b = float(input("Ingrese su salario: "))
 age = int(input("Ingrese su año de vinculacion: "))
-ejemplo = "hola"
 
-def Salario(Cedula,Salario_b,Age):
+def Salario(ced,Salario_b,Age):
     if (Salario_b > 1200000 and Age > 1995):
         neto = Salario_b * 0.06
     elif (Salario_b < 550000 or Age == 1995):
@@ -13,9 +12,10 @@ def Salario(Cedula,Salario_b,Age):
 
     salario_final = (Salario_b + neto) - (Salario_b * 0.04)
 
-    return print(f"Cedula: {Cedula} \nSu salario neto es: {salario_final}")
+    return print(f"Cedula: {ced} \nSu salario neto es: {salario_final}")
 
 Salario(cedula,salario_b,age)
+
 Salario(123456,1200001,1994)
 
 
