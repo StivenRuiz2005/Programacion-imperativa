@@ -1,3 +1,10 @@
+"""
+Autor: Carlos Stiven Ruiz Rojas
+Fecha: 2/10/2023
+Descricion: Salario neto
+
+"""
+
 cedula = int(input("Ingrese su cedula: "))
 salario_b = int(input("Ingrese su salario: "))
 año_vinculacion = int(input("Ingrese su año vinculacion: "))

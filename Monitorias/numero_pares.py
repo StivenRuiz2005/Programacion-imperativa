@@ -1,6 +1,6 @@
 """
 Autor: Carlos Stiven Ruiz Rojas
-Fecha: 2/10/2023
+Fecha: 3/10/2023
 Descricion: Cantidad numero pares y suma de pares Con For o While
 
 """
