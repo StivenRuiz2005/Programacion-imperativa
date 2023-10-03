@@ -4,8 +4,7 @@ Fecha: 2/10/2023
 Descricion: Tablas de multiplicar Con For o While
 
 """
-
-##################### FOR #########################
+ 
 
 for i in range(7,13): # Ciclo con limites inicial y final
     print (" TABLA DEL",i)
@@ -15,7 +14,6 @@ for i in range(7,13): # Ciclo con limites inicial y final
         acc += i*j
     print("Suma total de la tabla del",i ," = ",acc)
 
-#################### WHILE ########################
 
 i= 7
 while (i < 13): #Ciclo Con condicion
