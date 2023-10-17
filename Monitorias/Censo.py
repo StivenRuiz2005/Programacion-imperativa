@@ -7,26 +7,26 @@ Descricion: Censo de personas
 
 print("Bienvenido al censo de personas")
 print("============JEFE DE HOGAR============")
-nombre = input("Ingrese su nombre: ")
-apellido = input("Ingrese su apellido: ")
-tipo = input("Ingrese su tipo de documento: ")
-numero = (input("Ingrese su numero de documento: "))
-fecha = input("Ingrese su fecha de nacimiento con el formato xx/xx/xxxx: ")
-departamento = input("Ingrese su departamento de nacimiento: ")
-ciudad = input("Ingrese su ciudad de nacimiento: ")
-direccion = input("Ingrese su direccion: ")
-cantidad_fam = int(input("Ingrese la cantidad de familiares en el hogar: "))
+nombre = input("Nombre: ")
+apellido = input("Apellido: ")
+tipo = input("Tipo de documento: ")
+numero = (input("Numero de documento: "))
+fecha = input("Fecha de nacimiento con el formato xx/xx/xxxx: ")
+departamento = input("Departamento de nacimiento: ")
+ciudad = input("Ciudad de nacimiento: ")
+direccion = input("Direccion: ")
+cantidad_fam = int(input("Cantidad de familiares en el hogar: "))
 
 def censo():
     n = 1
     while ( n <= cantidad_fam):
         print(f"============FAMILIAR {n}============")
-        nombre1 = input("Ingrese su nombre: ")
-        apellido1 = input("Ingrese su apellido: ")
-        tipo1 = input("Ingrese su tipo de documento: ")
-        numero1 = (input("Ingrese su numero de documento: "))
-        fecha1 = input("Ingrese su fecha de nacimiento con el formato xx/xx/xxxx: ")
-        parentesco1 = input(f"Ingrese su parentesco con {nombre} : ")
+        nombre1 = input("Nombre: ")
+        apellido1 = input("Apellido: ")
+        tipo1 = input("Tipo de documento: ")
+        numero1 = (input("Numero de documento: "))
+        fecha1 = input("Fecha de nacimiento con el formato xx/xx/xxxx: ")
+        parentesco1 = input(f"Parentesco con {nombre} : ")
         n = n + 1
 
 censo()
