@@ -2,7 +2,7 @@
 Autor: Carlos Stiven Ruiz Rojas - 2259629
         Karen Grijalba Ortiz - 2259623
 Fecha: 18/10/2023
-Descricion: Justificacion de la probabilidad - Frecuencia absoluta
+Descricion: Justificacion de la probabilidad - Frecuencia absoluta de la suma de los dados
 
 """
 
