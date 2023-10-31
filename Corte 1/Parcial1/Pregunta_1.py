@@ -15,17 +15,17 @@ def salario_trabajador(tipo_trabajador,num_horas_trabajadas,tiempo_de_trabajo):
         elif num_horas_trabajadas > 192:
             h_extras= num_horas_trabajadas - 192
         #tipo de trabajador
-        if tipo_trabajador == "ejecutivo":
+        if tipo_trabajador == "EJECUTIVO":
             salario_base = 3000000
             v_hora= salario_base/192
             p_hora_extra= 1.2*h_extras*v_hora
             s_total= salario_base+p_hora_extra
-        elif tipo_trabajador == "administrativo":
+        elif tipo_trabajador == "ADMINISTRATIVO":
             salario_base = 2000000
             v_hora= salario_base/192
             p_hora_extra= (1.2*v_hora)*h_extras
             s_total= salario_base+p_hora_extra
-        elif tipo_trabajador == "auxiliar":
+        elif tipo_trabajador == "AUXILIAR":
             salario_base= 1500000
             v_hora= salario_base/192
             p_hora_extra= 1.2*h_extras*v_hora
@@ -37,9 +37,14 @@ def salario_trabajador(tipo_trabajador,num_horas_trabajadas,tiempo_de_trabajo):
             salario=s_total
             return salario
 
-
-
-tipo_trabajador= input("Ingrese el tipo de trabajador (Todo en minusculas) : ")
-num_horas_trabajadas= float(input("Ingrese las horas trabajadas: "))
-tiempo_de_trabajo=float(input("Ingrese el tiempo trabajado en la empresa: ")) 
-print(salario_trabajador(tipo_trabajador,num_horas_trabajadas,tiempo_de_trabajo))
+def pedir_datos():
+    try:
+        tipo_trabajador= input("Ingrese el tipo de trabajador: ").upper()
+        num_horas_trabajadas= float(input("Ingrese las horas trabajadas: "))
+        tiempo_de_trabajo=float(input("Ingrese el tiempo trabajado en la empresa: "))
+    except(ValueError):
+        print("Error, ingrese valores numericos")
+        print("================================")
+        pedir_datos()
+    else:
+        print(salario_trabajador(tipo_trabajador,num_horas_trabajadas,tiempo_de_trabajo))
